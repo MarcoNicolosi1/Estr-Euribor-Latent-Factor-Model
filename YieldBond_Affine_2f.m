@@ -32,7 +32,7 @@ sig_theta=par2{3};
 
 
 
-t_J = t_J((t < t_J)&(t_J < T)); %a column vector
+t_J = t_J((t <= t_J)&(t_J < T)); %a column vector
 
 if isempty(t_J)
     a = r_t;
